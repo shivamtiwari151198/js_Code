@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>function</title>
+</head>
+<body>
+    <h1>Learing Function in JS</h1>
+    <script>
+
+        //Function example
+
+        //How to create a function
+        function sayHello(){
+            //hear we write task
+            console.log("Hello, ");
+            console.log("how are you?");
+            console.log("what are you doing?");
+        } 
+
+        //function with argu
+        //and return type
+
+        function doSum(a, b){
+            //sum of two number
+            let c=a+b;
+            return c;
+        }
+
+        console.log("First line");
+        console.log("Second line");
+        sayHello();
+        console.log("mid of tha code");
+        sayHello();
+
+
+        //actual parameters
+        let s=doSum(12,17);
+        console.log("sum is",s);
+
+        //why?
+        //code.reuse
+
+
+        //arrow function
+
+        const tocelsius =(fahrenheit)=>{
+            let result=(5/9)*(fahrenheit-32);
+            return result;
+        };
+
+        let c = tocelsius(102);
+        console.log(c);
+
+
+        //anomans function
+        // function(){
+
+        // }
+
+
+
+
+    </script>
+</body>
+</html>

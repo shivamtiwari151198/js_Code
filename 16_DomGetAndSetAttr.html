@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dom get and set attribute</title>
+</head>
+<body>
+    <a id="url" class="alert alert-denger" href="https://www.google.com">Google</a>
+    <button onclick="getAtt()">Get</button>
+    <button onclick="setAtt()">Set</button>
+    <script>
+
+        const getAtt=()=>{
+            //get the attribute
+            let urlOb=document.getElementById("url")
+            let h=urlOb.getAttribute("href");
+            console.log(h);
+            console.log(urlOb.getAttribute("id"));
+            console.log(urlOb.getAttribute("class"));
+        }
+
+
+
+
+        const setAtt=()=>{
+            //get the attribute
+            let urlOb=document.getElementById("url")
+            urlOb.setAttribute("href","https://www.yahoo.com")
+        }
+
+        
+
+
+    </script>
+</body>
+</html>

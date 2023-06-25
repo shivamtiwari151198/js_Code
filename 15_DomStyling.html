@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dom Styling</title>
+    <style>
+        .red
+        {background-color: red;
+        color:white;}
+    </style>
+</head>
+<body>
+    <button onclick="changeStyle()">Change Style</button>
+
+    <button onclick="getStyle()">Get Information</button>
+
+    <h2 id="Main">Shivam Code</h2>
+    <h2 id="Sub">benglore</h2>
+    <h2 id="SubSub">programig </h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe accusantium ex, quo dolore temporibus neque vitae sapiente eos expedita sequi perferendis corrupti rerum earum eum unde in atque aut. Nulla recusandae autem reiciendis aut impedit commodi quas dignissimos quasi debitis architecto, deleniti, non numquam molestiae fugiat consectetur vero et quisquam minus ab fugit id quibusdam nam aliquam. Dolores illum tenetur earum dolorum doloremque est minus libero error ea, nemo cupiditate culpa! Eos asperiores modi quaerat! Aspernatur itaque aut reprehenderit, facere ad unde voluptates autem voluptatem nostrum cumque vitae repellendus mollitia deserunt voluptas qui voluptatum. Veniam nulla laudantium iusto dolore hic aspernatur. Voluptatibus quia quos autem unde magnam cum id ut aspernatur sequi amet hic, pariatur, soluta temporibus ab corporis nesciunt modi blanditiis architecto? Autem quia, veritatis, soluta qui officia aperiam corrupti at adipisci, sint sequi ratione? Quis tempora, pariatur ipsam temporibus odit, minus modi sequi voluptatum perferendis nisi nostrum illo libero autem voluptatibus fuga corporis, est maxime quaerat eos labore fugiat similique quibusdam? Ea nihil illum aliquam repellendus optio praesentium quia expedita excepturi? Voluptatibus accusantium quis labore exercitationem soluta ratione architecto harum deleniti quam? Nisi iste nulla voluptates repellendus veniam nobis cumque atque quis, amet illum, odio laudantium incidunt fugiat, rem a? Aliquam sequi voluptate deserunt, accusamus iusto libero voluptatum? Asperiores necessitatibus reprehenderit incidunt illum dolor consequatur eos officia deserunt dolore itaque esse, enim nisi quasi odit, quo tenetur ducimus eligendi repellat error voluptatem? Doloribus, similique in dignissimos aliquid temporibus totam nisi repellat quam hic sunt enim ad quod? Eos quibusdam voluptates molestias quos. Ipsum non sapiente adipisci cumque, corrupti, quas voluptatibus doloremque aliquid fugiat iure id suscipit illo vel dolor debitis deleniti ut dolores possimus enim nulla rem aut numquam omnis odio! Expedita, velit molestias, dolorum at incidunt distinctio necessitatibus sunt reiciendis nihil reprehenderit quia delectus rerum placeat! Aliquam optio aspernatur sunt esse commodi quibusdam consequatur ratione, odit mollitia facere rerum consequuntur molestias aperiam reiciendis error tempora ut pariatur dolores ipsa modi eveniet? Magni explicabo nobis impedit, aspernatur modi porro voluptatum velit iure accusantium fugiat repellendus molestias excepturi cumque corporis rem nesciunt placeat. A cumque perferendis tempore architecto accusantium, velit adipisci nobis fugit vero tempora expedita. Autem omnis delectus corrupti blanditiis, quisquam assumenda? Autem quo error omnis sequi repellendus non labore odit expedita doloribus dicta eos explicabo neque fugit quas reprehenderit, recusandae cumque doloremque consequatur nihil. Quasi consequuntur ipsam facere sapiente rerum assumenda neque nesciunt voluptatem magnam aperiam doloribus quidem fugit modi, itaque provident. Officia dolorum ducimus quae laboriosam. Deserunt sed minima excepturi corrupti laudantium corporis consectetur atque accusantium beatae aliquid. Sit quaerat laborum culpa nostrum nobis maiores optio mollitia iusto, asperiores accusantium dicta rerum labore explicabo ipsa itaque unde error officiis praesentium? Non, voluptate ad error provident minus quo eligendi similique, autem distinctio quod odio, id sunt numquam doloribus eos enim reprehenderit. Dolorum earum voluptas dignissimos! Dolor itaque cumque ea iure sed similique ullam quia ratione mollitia esse blanditiis quam, nemo accusamus quod fuga ad totam molestias? Inventore dicta placeat officia est enim minus nulla quos, alias nobis.</p>
+    <script>
+        //select the element
+        let mainOb=document.getElementById("Main");
+
+        //applying style on element
+
+        const changeStyle = () => {
+            mainOb.style.color = "blue";
+            mainOb.style.fontSize="30px";
+            mainOb.style.border="1px solid red";
+            mainOb.style.padding="20px";
+            // mainOb.style.background="#e2e2e2";
+            
+            document.body.style.background="black";
+            document.body.style.color="white";
+
+            mainOb.className=mainOb.className+"red";
+        };
+        const getStyle=()=>{
+            // console.log(mainOb.style.color);
+            // console.log(mainOb.style.fontSize);
+            // console.log(mainOb.style.border);
+            let styles=window.getComputedStyle(mainOb);
+            console.log(styles.getPropertyValue("color"));
+
+        }
+    </script>
+</body>
+</html>

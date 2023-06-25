@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // <h1>String Imprtant function</h1>
+
+
+
+        //JavaScript code
+        //string Inportant Function
+        let s ="I love java Script";
+        console.log(s);
+
+        //1.length- number of characters
+
+        let len=s.length;
+        console.log("length",len);
+
+        //1. Concat()
+
+        let s1="and java";
+        // console.log(s+" "+s1);
+        let ans=s.concat(" ",s1);
+        console.log(ans);
+
+        //2.charAT(x)
+
+        let ch=s.charAt(13);
+        console.log(ch);
+
+        //3.indexof
+
+        let index =s.indexOf("v");
+        console.log(index);
+
+        //last index of
+
+        let index1=s.lastIndexOf('a');
+        console.log(index1);
+
+        //To upper case
+        console.log(s.toLocaleUpperCase());
+
+
+        //To lower case
+
+        console.log(s.toLocaleLowerCase());
+
+        //7.Substring(string,end) {End is not included}
+
+        let sub=s.substring(2,6);
+        console.log(sub);
+
+        //8.StartsWith
+        console.log(s.startsWith("I love Java"));
+
+        //9.endWith
+
+        console.log(s.endsWith("java"));
+
+
+        //10. Split
+
+        let sp=s.split(" ");
+        console.log(typeof sp);
+        console.log(sp[0]);
+        console.log(sp[1]);
+        console.log(sp[2]);
+
+        //trim
+
+        let s2="        my contant"
+        let s3=s2.trim();
+        console.log(s3);
+        console.log(s2);
+
+    </script>
+</body>
+</html>

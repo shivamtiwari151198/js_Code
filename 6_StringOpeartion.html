@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Five Inmprtant string operation</title>
+</head>
+<body>
+    <h1>5 Impotant string operations</h1>
+    <script>
+        //1.How to chek equaility of two string
+        // ==, ===
+        //Literal
+        let str1="JavaScript";
+        let str2="JavaScript java";
+        console.log(str1);
+        console.log(str2);
+
+        console.log(str1==str2);
+        if(str1==str2){
+            console.log("both string are equals")
+        }
+
+        //ex. creating string in other way
+        let str3=new String("JavaScript");
+        let str4=new String("JavaScript");
+        console.log(str3);
+        console.log(str4);
+        console.log(str3 == str4);
+
+        //2.Compare two string
+        let s1="A";
+        let s2="B";
+
+        //Locale Compare
+
+        let result=s1.localeCompare(s2)
+        //exact maching:0
+        //s1<s2: -1 (skyCode- 65<66) //(A-65 Z-90), (a-98 z=122)
+        //s1>s2: +1
+        console.log(result);
+        console.log(s2.charCodeAt(0));
+
+        
+
+        //3.Repalce certiain word with another
+
+        let oldString="I hate javaScript";
+        let newString=oldString.replace("hate","love");
+        console.log(newString);
+        console.log(oldString);
+
+        //accessing Character -string[0]
+        //charAt(index)
+
+        console.log(oldString.charAt(0));
+        console.log(oldString[2]);
+
+
+        //converting string tp aaray usnig split function
+
+        let as=oldString.split(" ");
+        console.log(as);
+
+        let chara=oldString.split("");
+        console.log(chara);
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

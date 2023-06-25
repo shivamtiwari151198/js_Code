@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Common Operation</title>
+</head>
+<body>
+    <h1>JavaScript Common Array Operations</h1>
+    <script>
+        //array operation
+        //.Create
+
+        let name=["Shivam","suraj","arya"];
+        console.log(name);
+        console.log(name.lenght);
+
+        //Array access usnig index
+
+        console.log(name[0]);
+        console.log(name[1]);
+
+        //Loop over an array
+        //forEach 
+
+
+        name.forEach(function (item,index){
+            //this is function body
+            console.log(index, " => ",item);
+        });
+
+        let nums=[22,12,13]
+        let sum=0;
+
+        nums.forEach(function(it,i){
+            sum=sum+it;
+
+        });
+        console.log(" sum ",sum);
+
+        //add to item last
+
+        console.log(name);
+
+        //Adding element at last
+
+        name.push("shyam");
+        console.log(name);
+        name.push("Sita");
+        console.log(name);
+
+        let r=name.pop();
+        console.log(r);
+        console.log(name);
+        console.log(name.pop());
+        console.log(name);
+
+        //remove element from beinning
+
+        let r1=name.shift();
+        console.log(r1);
+        console.log(name);
+
+        //Aad element at front end
+
+        let r2=name.unshift("Vivek");
+        console.log(r2);
+        console.log(name);
+
+        //Get postion in aary
+
+        let pos=name.indexOf("Vivek")
+        console.log(pos);
+
+        //remove the element any postion using splice
+        //splice(pos,n)
+
+        console.log(name.splice(1,2));
+        console.log(name);
+
+
+        //Copy an aaray
+        //slice()
+
+        let copy=name.slice()
+        //shallowCopy
+        console.log(copy);
+        console.log(name);
+
+        //..............
+        //let arr
+        //arr.length()
+
+
+        //arr.length
+        //arr.string
+        console.log(name.lenght);
+        let st="hellow dont do this mistake";
+        console.log(st.length);
+
+        //name[0]
+        console.log(name[0]);
+
+    </script>
+    
+</body>
+</html>

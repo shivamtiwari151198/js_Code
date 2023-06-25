@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Object</title>
+</head>
+<body>
+    <h1>Object Operation </h1>
+    <script>
+        
+        //creating object
+
+        let ob={
+            name:'Mohan',
+            age:30,
+            address:'Lucknow',
+            phon:9838,
+            "last name":"Singh",
+
+            display:function(){
+                console.log("display properties..");
+                console.log(this.name);
+                console.log(this.address);
+                console.log(this.age);
+            },
+        };
+        // console.log(ob);
+        // console.log(typeof ob);
+
+
+        // ///accessing the properties of object
+        // console.log(ob.name);
+        // console.log(ob.address);
+
+        // console.log(ob["name"]);
+        // console.log(ob["last name"]);
+
+        // ob.display();
+
+        //for in loop for lopping properties
+
+        // for (let key in ob){
+        //     console.log(key+" "+ob[key])
+        // }
+
+        // // ob.display();
+        // ob["display"]();
+
+        console.log(ob.name);
+
+        //changing value of properties
+
+        ob.name="Shivam";
+        ob["last name"]="tiwari";
+
+        console.log(ob.name);
+
+        console.log(ob);
+
+        //dynamic adding properties
+
+        ob["email"]="shivam123@gmail.com";
+
+        console.log(ob);
+
+
+        //deleting properties
+
+        delete ob["last name"];
+        console.log(ob);
+
+
+
+
+
+
+    </script>
+</body>
+</html>
